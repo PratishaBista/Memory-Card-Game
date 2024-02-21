@@ -51,7 +51,7 @@ header {
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
+  gap: 0.2rem;
 }
 
 .card {
@@ -89,7 +89,8 @@ header {
   background-image: url("Images/back-face.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  border-radius: 20px;
 }
 
 .card .front-face {
