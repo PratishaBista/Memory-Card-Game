@@ -13,6 +13,7 @@ const createCard = image => {
 
     const frontFace = document.createElement('div');
     // createElement(tagName)
+
     frontFace.classList.add('card-face', 'front-face');
 
     const imgElement = document.createElement('img');

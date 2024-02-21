@@ -32,6 +32,7 @@ header {
   top: 70px;
   left: 50%;
   transform: translateX(-50%);
+  /*timer will be translated horizontally by 50% of its own width in the left direction (0.5 * width) */
   font-size: 20px;
 }
 
