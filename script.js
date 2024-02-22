@@ -1,3 +1,5 @@
+"use strict";
+
 let clickSound = document.querySelector('#click-audio');
 let buttonSound = document.querySelector('#button-audio');
 const cardContainer = document.querySelector('.card-container');
@@ -13,7 +15,6 @@ const createCard = image => {
 
     const frontFace = document.createElement('div');
     // createElement(tagName)
-
     frontFace.classList.add('card-face', 'front-face');
 
     const imgElement = document.createElement('img');
@@ -111,6 +112,7 @@ const resetGame = () => {
     clearInterval(timerInterval);
     timerDisplay.textContent = '00:00:00';
     cardContainer.innerHTML = '';
+    matchedCards = [];
     initGame();
 };
 
